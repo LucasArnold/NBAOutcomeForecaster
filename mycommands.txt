@@ -1,0 +1,5 @@
+git clone https://github.com/LucasArnold/NBAOutcomeForecaster.git
+git checkout -b alexh/making-first-pr
+git add . 
+git commit -m"always use markdown"
+git push origin alexh/making-first-pr
