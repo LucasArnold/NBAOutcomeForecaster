@@ -31,7 +31,9 @@ nbastats_1617 <- read.csv("/Users/johnhenrycruz/Desktop/NBAOutcomeForecaster/nba
 
 nbastats_adv_1617 <- read.csv("/Users/johnhenrycruz/Desktop/NBAOutcomeForecaster/nbastats_adv_1617.csv")
 
-nbastats_compiled_1617 <- left_join(nbastats_1617, nbastats_adv_1617)
+nbastats_compiled_1617 <- left_join(nbastats_1617, nbastats_adv_1617, by = "Player")
+
+write.csv(nbastats_compiled_1617, "/Users/johnhenrycruz/Desktop/NBAOutcomeForecaster/nbastats_compiled_1617.csv")
 
 ```
 
